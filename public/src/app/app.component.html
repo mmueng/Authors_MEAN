@@ -1,0 +1,11 @@
+<div class="container">
+  <span>{{ title }} app is running!</span>
+  <h1>Authors</h1>
+  <p [routerLink]="['/']"></p>
+  <button [routerLink]="['/new']">Add an author</button>
+  <p [routerLink]="['/edit/:id']"></p>
+</div>
+
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,16 @@
+<div class="container">
+    <p>auths works!</p>
+
+    <div *ngFor="let auth of allAuths">
+
+        <table class="table">
+            <tr>
+                <td>{{auth.name}}</td>
+                <td><button routerLink="/edit/{{auth._id}}">Edit</button> | <button
+                        (click)="deleteAuthFromService(auth._id)">Delete</button></td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="col col-lg"></div>
+</div>
